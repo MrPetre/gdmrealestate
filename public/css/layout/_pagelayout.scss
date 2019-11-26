@@ -1,0 +1,36 @@
+/* =============== PARALLAX PANELS ============ */
+#wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+// make all panels fullpage
+.panels {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+// this is the fixed first panel
+#static-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* prevents your fixed panel from being on top of your subsequent panels */
+  z-index: 600;
+}
+
+// the second panel -> after the first fixed panel
+// should get 100% top margin, thats the trick
+#scrolling-panel {
+  margin-top: 100vh;
+  z-index: 700;
+  background-color: white;
+  visibility: hidden;
+}
+
+#page-content {
+  margin-top: 100px;
+}

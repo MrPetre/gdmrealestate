@@ -1,0 +1,45 @@
+/* =============== BANNER ============ */
+.img-container {
+  background-image: url(../img/3D-Interior-Visualizations-Living-room-Sample.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  margin-top: 1.6em;
+  transform: scale(1.1);
+  -webkit-animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    2.5s backwards;
+  animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s
+    backwards;
+}
+
+.garrett {
+  background-image: url(../img/MakiTransparent.png);
+  background-size: 503px 754px;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 4;
+  width: 503px;
+  height: 710px;
+  -webkit-animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    3.5s backwards;
+  animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.5s
+    backwards;
+  transform: scale(1.3);
+}
+
+.img-centerer {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+  bottom: 80px;
+  width: 503px;
+  height: 710px;
+}

@@ -1,0 +1,42 @@
+/* =============== BODY ============ */
+.cenetered-container {
+  background: white !important;
+  z-index: 10;
+  width: 100vh;
+  margin-top: 115px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-podding {
+  padding: 0 !important;
+}
+
+#about-me-section {
+  margin-top: 50px;
+}
+
+.article {
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 10px;
+  height: 100%;
+}
+
+.moretext {
+  display: none;
+}
+
+.section-heading {
+  font-family: "RalewayBold";
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-family: "Raleway";
+  font-size: 20px;
+}

@@ -1,0 +1,498 @@
+/* =============== FOOTER ============ */
+
+/* Footer dvider */
+.outer {
+  width: 1px;
+  height: 400px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: grey;
+  top: 0;
+  box-shadow: 0 0 30px 20px grey;
+}
+
+.clr {
+  clear: both;
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  margin: auto;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding-top: 20px;
+  bottom: 0;
+}
+
+.footer-social-icons {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.footer-social-icons ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-social-icons ul li {
+  display: inline-block;
+  margin-right: 2px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 5px;
+  background: #000;
+  transition: background 0.15s;
+}
+
+.footer-social-icons ul li a {
+  color: #fff;
+  display: block;
+  font-size: 22px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+.footer-social-icons ul li a i {
+  line-height: 36px;
+}
+
+.footer-social-icons ul li:nth-child(1):hover {
+  background: #3b5998;
+}
+
+.footer-social-icons ul li:nth-child(2):hover {
+  background: #c32aa3;
+}
+
+.footer-social-icons ul li:nth-child(3):hover {
+  background: #007bb5;
+}
+
+.footer-mid-part {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.footer-section {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-heading {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.footer-heading h2 {
+  font-size: 22px;
+  text-align: left;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-family: "RalewayBold";
+}
+
+.footer-contact-box {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  transition: color 0.15s;
+}
+
+.footer-contact-icon {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+.footer-contact-icon i {
+  color: #282936;
+  font-size: 20px;
+  transition: color 0.15s;
+}
+
+.footer-contact-text {
+  width: 85%;
+  height: auto;
+  float: left;
+  margin-left: 10px;
+  transition: color 0.15s;
+  font-family: "Raleway";
+}
+
+.footer-contact-text p {
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.footer-contact-text p a {
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-contact-text p:hover {
+  color: #f00;
+}
+
+.footer-contact-box:hover .footer-contact-icon i {
+  color: #f00;
+}
+
+.footer-contact-box:hover .footer-contact-text p a {
+  color: #f00;
+}
+
+.footer-link {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.footer-link ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link ul li {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.footer-link ul li a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.footer-link ul li a:hover {
+  color: #f00;
+}
+
+/* Contact form */
+.footer-form {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #282936;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #282936;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar::before {
+  left: 50%;
+}
+
+.bar::after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar::before,
+input:focus ~ .bar::after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #282936;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #282936;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #282936;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+/* Contact me button */
+.lets-talk-button {
+  color: #3f3f3f;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: auto;
+  padding: 12px 32px 12px 82px;
+  position: relative;
+  text-decoration: none;
+}
+
+.lets-talk-button .label,
+.lets-talk-button .icon-arrow {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  perspective: 1000;
+}
+
+.lets-talk-button .label {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.lets-talk-button .icon-arrow {
+  fill: #3f3f3f;
+  height: 15px;
+  top: 17px;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1),
+    opacity 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  width: 35px;
+}
+
+.lets-talk-button .icon-arrow.before {
+  left: 32px;
+  margin-right: 15px;
+  position: absolute;
+  transform-origin: left center;
+}
+
+.lets-talk-button .icon-arrow.after {
+  margin-left: 15px;
+  opacity: 0;
+  position: absolute;
+  right: 32px;
+  transform: translateX(75%) scaleX(0.1);
+  transform-origin: right center;
+}
+
+.lets-talk-button:hover .label {
+  transform: translateX(-52px);
+}
+
+.lets-talk-button:hover .icon-arrow.before {
+  opacity: 0;
+  transform: translateX(-75%) scaleX(0.1);
+}
+
+.lets-talk-button:hover .icon-arrow.after {
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
+}
+
+.lets-talk-button:active {
+  border-color: #fd6154;
+  color: #fd6154;
+}
+
+.lets-talk-button:active .icon-arrow {
+  fill: #fd6154;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  font-family: "Raleway";
+}
+
+.footer-logo {
+  background-image: url(../img/GarretlogoxV.svg);
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+h1 span {
+  color: #f00;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#return-to-top {
+  position: absolute;
+  z-index: 500;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}

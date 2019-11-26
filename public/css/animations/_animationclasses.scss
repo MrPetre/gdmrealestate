@@ -1,0 +1,28 @@
+.loader-height-animation {
+  animation: loader-height 1s forwards 2.8s;
+  will-change: height;
+}
+
+.logo-animation {
+  -webkit-animation: swirlAnimation 1.3s linear 0.8s both;
+  animation: swirlAnimation 1.3s linear 0.8s both;
+  will-change: opacity, transform;
+}
+
+.left-border-animation {
+  animation: border-slide-in 1s forwards 3.8s;
+}
+
+.loader-text-animation {
+  -webkit-animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s
+    both;
+  animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
+  will-change: opacity, letter-spacing;
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
