@@ -58,16 +58,6 @@
   }
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @media only screen and (max-width: 615px) {
   .outer {
     margin: 45px 200px 45px 200px;

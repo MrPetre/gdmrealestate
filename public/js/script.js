@@ -21,8 +21,17 @@ window.addEventListener("load", function() {
   if (browserWidth >= 991) {
     $(".nav-link").addClass("nav-link-animation");
     $(".navbar-brand").addClass("navbar-brand-animation");
-    $(".garrett").addClass("garrett-animation");
   }
+
+  if (browserWidth <= 395) {
+    $(".garrett").css({
+      transform: "scale(0.8)",
+      bottom: "-10em",
+      right: "15px"
+    });
+  }
+
+  $(".garrett").addClass("garrett-animation");
 });
 
 $(document).ready(function() {
