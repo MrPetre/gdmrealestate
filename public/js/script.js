@@ -1,3 +1,7 @@
+// Variables
+let browserHeight = $(window).height();
+let browserWidth = $(window).width();
+
 //Forces the browser to start at the top when refreshed w/ fade
 $("body").fadeOut();
 setTimeout(function() {
@@ -13,6 +17,12 @@ window.addEventListener("load", function() {
   $(".loader").addClass("loader-height-animation");
   $(".left-border").addClass("left-border-animation");
   $("#scrolling-panel").css({ visibility: "visible" });
+
+  if (browserWidth >= 991) {
+    $(".nav-link").addClass("nav-link-animation");
+    $(".navbar-brand").addClass("navbar-brand-animation");
+    $(".garrett").addClass("garrett-animation");
+  }
 });
 
 $(document).ready(function() {
@@ -53,8 +63,6 @@ $(document).ready(function() {
     });
     $(".loader-content").remove();
   }, 5000);
-
-  let browserHeight = $(window).height();
 
   if (browserHeight <= 766) {
     $(".garrett").css({ transform: "scale(0.9)", bottom: "-18%" });

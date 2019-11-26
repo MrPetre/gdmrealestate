@@ -68,29 +68,6 @@
   }
 }
 
-@media only screen and (min-width: 991px) {
-  .nav-link {
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 4s
-      both;
-    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 4s both;
-  }
-
-  .navbar-brand {
-    -webkit-animation: tracking-in-contract 1s
-      cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
-    animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s
-      both;
-    will-change: opacity, letter-spacing;
-  }
-
-  .garrett {
-    -webkit-animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-      5s backwards;
-    animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5s
-      backwards;
-  }
-}
-
 @media only screen and (max-width: 615px) {
   .outer {
     margin: 45px 200px 45px 200px;
