@@ -6,12 +6,14 @@ setTimeout(function() {
   $("html, body").scrollTop(0);
 }, 800);
 
-$(document).ready(function() {
+window.addEventListener("load", function() {
   $(".img-logo-loader").addClass("logo-animation");
   $(".loader-text").addClass("loader-text-animation");
   $(".loader").addClass("loader-height-animation");
   $(".left-border").addClass("left-border-animation");
+});
 
+$(document).ready(function() {
   // Add slideDown animation to Bootstrap dropdown when expanding.
   $(".dropdown").on("show.bs.dropdown", function() {
     $(this)
