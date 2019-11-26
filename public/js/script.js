@@ -6,11 +6,13 @@ setTimeout(function() {
   $("html, body").scrollTop(0);
 }, 800);
 
+$(".loader-text").addClass("loader-text-animation");
+$(".loader").addClass("loader-height-animation");
+
 window.addEventListener("load", function() {
   $(".img-logo-loader").addClass("logo-animation");
-  $(".loader-text").addClass("loader-text-animation");
-  $(".loader").addClass("loader-height-animation");
   $(".left-border").addClass("left-border-animation");
+  $("#scrolling-panel").css({ visibility: "visible" });
 });
 
 $(document).ready(function() {
