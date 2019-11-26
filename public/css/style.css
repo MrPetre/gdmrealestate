@@ -183,6 +183,7 @@ table {
   background-size: 300px 300px;
   height: 300px;
   width: 300px;
+  opacity: 0;
 }
 
 .logo-animation {
@@ -530,6 +531,7 @@ i {
   margin-top: 100vh;
   z-index: 700;
   background-color: white;
+  visibility: hidden;
 }
 
 /* =============== BODY ============ */

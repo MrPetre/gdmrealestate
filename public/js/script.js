@@ -51,6 +51,7 @@ $(document).ready(function() {
       overflow: "auto",
       height: "auto"
     });
+    $(".loader-content").remove();
   }, 5000);
 
   $(".navbar-toggler").click(function() {
