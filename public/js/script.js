@@ -1,12 +1,15 @@
-$(document).ready(function() {
-  //Forces the browser to start at the top when refreshed w/ fade
-  $("body").fadeOut();
-  setTimeout(function() {
-    $("html, body").scrollTop(0);
-    $("body").fadeIn(1);
-    $("html, body").scrollTop(0);
-  }, 800);
+//Forces the browser to start at the top when refreshed w/ fade
+$("body").fadeOut();
+setTimeout(function() {
+  $("html, body").scrollTop(0);
+  $("body").fadeIn(1);
+  $("html, body").scrollTop(0);
+}, 800);
 
+// Stops animations from playing until the page fully loads
+window.onload = function() {};
+
+$(document).ready(function() {
   // Add slideDown animation to Bootstrap dropdown when expanding.
   $(".dropdown").on("show.bs.dropdown", function() {
     $(this)

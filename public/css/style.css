@@ -158,6 +158,7 @@ table {
   display: flex;
   background-color: white;
   animation: loader-height 1s forwards 2.8s;
+  will-change: height;
 }
 
 @keyframes loader-height {
@@ -181,6 +182,7 @@ table {
   width: 300px;
   -webkit-animation: swirlAnimation 1.3s linear 0.8s both;
   animation: swirlAnimation 1.3s linear 0.8s both;
+  will-change: opacity, transform;
 }
 
 .loader-text {
@@ -190,6 +192,14 @@ table {
   font-family: "Raleway";
   -webkit-animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
   animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
+  will-change: opacity, letter-spacing;
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* For the logo */
@@ -1365,16 +1375,19 @@ h1 span {
   .nav-link {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 4s both;
     animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 4s both;
+    will-change: filter, opacity;
   }
 
   .navbar-brand {
     -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
     animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+    will-change: opacity, letter-spacing;
   }
 
   .garrett {
     -webkit-animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5s backwards;
     animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5s backwards;
+    will-change: opacity, transform;
   }
 }
 @media only screen and (max-width: 615px) {
