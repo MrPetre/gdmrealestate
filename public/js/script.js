@@ -10,6 +10,10 @@ setTimeout(function() {
   $("html, body").scrollTop(0);
 }, 800);
 
+if (browserWidth >= 991) {
+  $(".mobile-social").remove();
+}
+
 $(".loader-content").addClass("loader-animation");
 
 window.addEventListener("load", function() {
@@ -18,7 +22,6 @@ window.addEventListener("load", function() {
   $("#scrolling-panel").css({ visibility: "visible" });
 
   if (browserWidth >= 991) {
-    $(".mobile-social").remove();
     $(".nav-link").addClass("nav-link-animation");
     $(".navbar-brand").addClass("navbar-brand-animation");
   }
@@ -26,6 +29,7 @@ window.addEventListener("load", function() {
   if (browserWidth <= 991) {
     $(".dropdown-menu").remove();
     $(".navbar-brand").remove();
+    $(".dropdown-toggle").remove();
   }
 
   if (browserWidth <= 395) {
