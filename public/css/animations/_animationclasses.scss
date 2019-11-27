@@ -1,6 +1,5 @@
 .loader-height-animation {
   animation: loader-height 1s forwards 2.8s;
-  will-change: height;
 }
 
 .logo-animation {
@@ -14,10 +13,11 @@
 }
 
 .loader-text-animation {
-  -webkit-animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s
+  -webkit-animation: text-focus-in-out 1.6s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9s both;
+  animation: text-focus-in-out 1.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9s
     both;
-  animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
-  will-change: opacity, letter-spacing;
+  will-change: filter;
 }
 
 .nav-link-animation {
