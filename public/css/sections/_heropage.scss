@@ -10,10 +10,6 @@
   -webkit-filter: blur(8px);
   margin-top: 1.6em;
   transform: scale(1.1);
-  -webkit-animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    2.5s backwards;
-  animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s
-    backwards;
 }
 
 .garrett {
@@ -25,8 +21,8 @@
   width: 503px;
   height: 710px;
   -webkit-animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    3.5s backwards;
-  animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.5s
+    4.2s backwards;
+  animation: fadeInAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.2s
     backwards;
   transform: scale(1.3);
 }
