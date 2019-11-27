@@ -150,26 +150,14 @@ table {
   animation: loader-height 1s forwards 2.8s;
 }
 
-.logo-animation {
-  -webkit-animation: swirlAnimation 1.3s linear 0.8s both;
-  animation: swirlAnimation 1.3s linear 0.8s both;
-  will-change: opacity, transform;
-}
-
 .loader-animation {
-  -webkit-animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
-  animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+  -webkit-animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .left-border-animation {
   animation: border-slide-in 1s forwards 3.8s;
   will-change: width;
-}
-
-.loader-text-animation {
-  -webkit-animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
-  animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
-  will-change: letter-spacing;
 }
 
 .nav-link-animation {
@@ -781,6 +769,7 @@ i {
 .loader-content {
   position: absolute;
   display: inline-block;
+  opacity: 0;
 }
 
 .img-logo-loader {

@@ -10,9 +10,8 @@ setTimeout(function() {
   $("html, body").scrollTop(0);
 }, 800);
 
-$(".loader-content").addClass("loader-animation");
-
 window.addEventListener("load", function() {
+  $(".loader-content").addClass("loader-animation");
   $(".loader").addClass("loader-height-animation");
   $(".left-border").addClass("left-border-animation");
   $("#scrolling-panel").css({ visibility: "visible" });

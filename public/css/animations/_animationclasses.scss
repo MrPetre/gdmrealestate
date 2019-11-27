@@ -4,8 +4,8 @@
 
 .loader-animation {
   -webkit-animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    0.8s both;
-  animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+    both;
+  animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .left-border-animation {
