@@ -28,15 +28,21 @@
   }
 }
 
-// New logo loader animation
-@-webkit-keyframes text-focus-in-out {
+// New loader animation
+@-webkit-keyframes loader-fade-in {
   0% {
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
 
-  50% {
+  40% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  70% {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
@@ -49,14 +55,20 @@
   }
 }
 
-@keyframes text-focus-in-out {
+@keyframes loader-fade-in {
   0% {
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
 
-  50% {
+  40% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  70% {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
@@ -114,7 +126,7 @@
 }
 
 /* =============== LOADER ANIMATIONS ============ */
-// The Logo Animation
+// Old Logo Animation
 @-webkit-keyframes swirlAnimation {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -167,7 +179,7 @@
   }
 }
 
-// The loader text animation
+// Old loader text animation
 @-webkit-keyframes textAnimation {
   0% {
     letter-spacing: 1em;

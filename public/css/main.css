@@ -156,14 +156,20 @@ table {
   will-change: opacity, transform;
 }
 
+.loader-animation {
+  -webkit-animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+  animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+}
+
 .left-border-animation {
   animation: border-slide-in 1s forwards 3.8s;
+  will-change: width;
 }
 
 .loader-text-animation {
-  -webkit-animation: text-focus-in-out 1.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9s both;
-  animation: text-focus-in-out 1.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9s both;
-  will-change: filter;
+  -webkit-animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
+  animation: textAnimation 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s both;
+  will-change: letter-spacing;
 }
 
 .nav-link-animation {
@@ -215,13 +221,18 @@ table {
     opacity: 1;
   }
 }
-@-webkit-keyframes text-focus-in-out {
+@-webkit-keyframes loader-fade-in {
   0% {
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
-  50% {
+  40% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+  70% {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
@@ -232,13 +243,18 @@ table {
     opacity: 0;
   }
 }
-@keyframes text-focus-in-out {
+@keyframes loader-fade-in {
   0% {
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
-  50% {
+  40% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+  70% {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
@@ -773,7 +789,6 @@ i {
   background-size: 300px 300px;
   height: 300px;
   width: 300px;
-  opacity: 0;
 }
 
 .loader-text {
@@ -781,6 +796,8 @@ i {
   font-size: 50px;
   margin-top: 20px;
   font-family: "Raleway";
+  letter-spacing: 0.3em;
+  margin-left: 10px;
 }
 
 /* =============== BANNER ============ */

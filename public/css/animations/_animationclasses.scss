@@ -2,22 +2,15 @@
   animation: loader-height 1s forwards 2.8s;
 }
 
-.logo-animation {
-  -webkit-animation: swirlAnimation 1.3s linear 0.8s both;
-  animation: swirlAnimation 1.3s linear 0.8s both;
-  will-change: opacity, transform;
+.loader-animation {
+  -webkit-animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    0.8s both;
+  animation: loader-fade-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
 }
 
 .left-border-animation {
   animation: border-slide-in 1s forwards 3.8s;
-}
-
-.loader-text-animation {
-  -webkit-animation: text-focus-in-out 1.6s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9s both;
-  animation: text-focus-in-out 1.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9s
-    both;
-  will-change: filter;
+  will-change: width;
 }
 
 .nav-link-animation {
