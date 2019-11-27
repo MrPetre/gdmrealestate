@@ -1434,7 +1434,7 @@ h1 span {
     outline: none !important;
     margin: 10px;
     opacity: 0;
-    animation: fade-in 1s forwards 2.8s;
+    animation: fade-in 1s forwards 3.5s;
   }
 }
 @media only screen and (max-width: 615px) {
