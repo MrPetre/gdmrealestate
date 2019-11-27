@@ -18,8 +18,14 @@ window.addEventListener("load", function() {
   $("#scrolling-panel").css({ visibility: "visible" });
 
   if (browserWidth >= 991) {
+    $(".mobile-social").remove();
     $(".nav-link").addClass("nav-link-animation");
     $(".navbar-brand").addClass("navbar-brand-animation");
+  }
+
+  if (browserWidth <= 991) {
+    $(".dropdown-menu").remove();
+    $(".navbar-brand").remove();
   }
 
   if (browserWidth <= 395) {
@@ -75,6 +81,15 @@ $(document).ready(function() {
   if (browserHeight <= 766) {
     $(".garrett").css({ transform: "scale(0.9)", bottom: "-18%" });
   }
+
+  $(function() {
+    let navMain = $(".navbar-collapse"); // avoid dependency on #id
+    // "a:not([data-toggle])" - to avoid issues caused
+    // when you have dropdown inside navbar
+    navMain.on("click", "a:not([data-toggle])", null, function() {
+      navMain.collapse("hide");
+    });
+  });
 
   //For mobile
   $(".navbar-toggler").click(function() {

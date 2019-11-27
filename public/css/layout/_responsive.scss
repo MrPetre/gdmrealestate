@@ -56,6 +56,18 @@
     opacity: 0;
     animation: fade-in 1s forwards 5s;
   }
+
+  .navbar-nav {
+    padding-right: 0 !important;
+  }
+
+  .nav-item:nth-child(2) {
+    margin: auto !important;
+  }
+
+  .nav-item:nth-child(7) {
+    margin-bottom: 10px !important;
+  }
 }
 
 @media only screen and (max-width: 615px) {
