@@ -10,10 +10,9 @@ setTimeout(function() {
   $("html, body").scrollTop(0);
 }, 800);
 
-$(".loader-text").addClass("loader-text-animation");
-$(".img-logo-loader").addClass("logo-animation");
-
 window.addEventListener("load", function() {
+  $(".loader-text").addClass("loader-text-animation");
+  $(".img-logo-loader").addClass("logo-animation");
   $(".loader").addClass("loader-height-animation");
   $(".left-border").addClass("left-border-animation");
   $("#scrolling-panel").css({ visibility: "visible" });
