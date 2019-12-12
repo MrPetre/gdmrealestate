@@ -267,7 +267,12 @@
                       <h2>Get in touch directly</h2>
                     </div>
                     <div class="footer-form">
-                      <form method="post" action="#">
+                      <form
+                        id="contact-form"
+                        method="post"
+                        action="mailto:garrett.maki@fitrealty.com"
+                        enctype="text/plain"
+                      >
                         <div class="group">
                           <input type="text" required />
                           <span class="highlight"></span>
@@ -288,7 +293,11 @@
                         </div>
 
                         <!-- Submit button -->
-                        <a class="lets-talk-button" href="javascript:void()">
+                        <a
+                          onclick="document.getElementById('contact-form').submit();"
+                          class="lets-talk-button"
+                          href="javascript:void()"
+                        >
                           <svg class="icon-arrow before">
                             <use xlink:href="#arrow"></use>
                           </svg>
@@ -350,7 +359,7 @@
                       </div>
                       <div class="footer-contact-text">
                         <p>
-                          <a href="mailto:info@garrett.maki@fitrealty.com"
+                          <a href="mailto:garrett.maki@fitrealty.com"
                             >garrett.maki@fitrealty.com</a
                           >
                         </p>

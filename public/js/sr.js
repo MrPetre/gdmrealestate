@@ -32,24 +32,24 @@ ScrollReveal().reveal(".text-reveal", {
 
 ScrollReveal().reveal("#instagram", {
   ...defaultProps,
-  delay: 1000,
+  delay: 600,
   origin: "left"
 });
 
 ScrollReveal().reveal("#footer-left", {
   ...defaultProps,
-  delay: 1100,
+  delay: 600,
   origin: "left"
 });
 
 ScrollReveal().reveal("#footer-right", {
   ...defaultProps,
-  delay: 1100,
+  delay: 600,
   origin: "right"
 });
 
 ScrollReveal().reveal("#footer-bottom", {
   ...defaultProps,
-  delay: 1300,
+  delay: 600,
   origin: "bottom"
 });
