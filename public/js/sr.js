@@ -8,48 +8,48 @@ const defaultProps = {
 
 ScrollReveal().reveal(".section-heading", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "left"
 });
 
 ScrollReveal().reveal(".separator", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "bottom"
 });
 
 ScrollReveal().reveal("#read-more-button", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "bottom"
 });
 
 ScrollReveal().reveal(".text-reveal", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "right"
 });
 
 ScrollReveal().reveal("#instagram", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "left"
 });
 
 ScrollReveal().reveal("#footer-left", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "left"
 });
 
 ScrollReveal().reveal("#footer-right", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "right"
 });
 
 ScrollReveal().reveal("#footer-bottom", {
   ...defaultProps,
-  delay: 600,
+  delay: 300,
   origin: "bottom"
 });

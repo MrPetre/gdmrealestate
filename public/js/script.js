@@ -62,6 +62,16 @@ $(document).ready(function() {
       .slideUp();
   });
 
+  //Scroll fade w/ the static panel
+  if (browserWidth <= 991) {
+    $(window).scroll(function() {
+      $(".fade-scroll").css(
+        "opacity",
+        1 - $(window).scrollTop() / ($(".fade-scroll").height() / 1.2)
+      );
+    });
+  }
+
   //Disables scrolling until the loader finishes
   $("html").css({
     overflow: "hidden",

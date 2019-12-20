@@ -495,153 +495,6 @@ table {
   color: #fff;
 }
 
-.agency-btn {
-  position: relative;
-  height: 45px;
-  width: 150px;
-  margin: 10px 7px;
-  padding: 5px 5px;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: #383736;
-  border: 2px #383736 solid;
-  border-radius: 4px;
-  text-transform: uppercase;
-  outline: 0;
-  overflow: hidden;
-  background: none;
-  z-index: 1;
-  outline: none !important;
-  cursor: pointer;
-  transition: 0.08s ease-in;
-  -o-transition: 0.08s ease-in;
-  -ms-transition: 0.08s ease-in;
-  -moz-transition: 0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
-}
-
-.fill:hover {
-  color: whitesmoke;
-}
-
-.fill::before {
-  content: "";
-  position: absolute;
-  background: #383736;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  transition: top 0.09s ease-in;
-  -webkit-transition: top 0.09s ease-in;
-}
-
-.fill:hover::before {
-  top: 0;
-}
-
-.col-lg-3 {
-  margin-bottom: 32px;
-}
-
-.card-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: auto;
-  background: url(../img/house-interior-landing-page.jpg);
-  background-color: black;
-  background-size: cover;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px #000;
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  background: rgba(77, 77, 77, 0.9);
-  color: #fef5df;
-  opacity: 0;
-  transition: all 0.5s;
-  font-family: "Playfair Display", serif;
-}
-
-.items {
-  padding-left: 20px;
-  letter-spacing: 3px;
-}
-
-.head {
-  font-size: 30px;
-  line-height: 40px;
-  transition: all 0.7s;
-}
-.head hr {
-  display: block;
-  width: 0;
-  border: none;
-  border-bottom: solid 2px #fef5df;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all 0.4s;
-}
-
-.price {
-  font-size: 22px;
-  line-height: 10px;
-  font-weight: bold;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.7s;
-}
-.price .old {
-  text-decoration: line-through;
-  color: #b3b3b3;
-}
-
-.cart {
-  font-size: 12px;
-  opacity: 0;
-  letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
-  transform: translateY(40px);
-  transition: all 0.7s;
-}
-.cart i {
-  font-size: 16px;
-}
-.cart span {
-  margin-left: 10px;
-}
-
-.card-container:hover .overlay {
-  opacity: 1;
-}
-.card-container:hover .overlay .head {
-  transform: translateY(0);
-}
-.card-container:hover .overlay hr {
-  width: 100%;
-  transition-delay: 0.4s;
-}
-.card-container:hover .overlay .price {
-  transform: translateY(0);
-  transition-delay: 0.3s;
-  opacity: 1;
-}
-.card-container:hover .overlay .cart {
-  transform: translateY(0);
-  transition-delay: 0.6s;
-  opacity: 1;
-}
-
 /* =============== PARALLAX PANELS ============ */
 #wrapper {
   position: absolute;
@@ -882,7 +735,7 @@ i {
 }
 
 .agency-body {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 
 /* =============== FOOTER ============ */
@@ -1405,7 +1258,7 @@ h1 span {
   }
 
   .left-border {
-    margin-top: 1px;
+    margin-top: 0.5px;
   }
 }
 @media only screen and (max-width: 700px) {
