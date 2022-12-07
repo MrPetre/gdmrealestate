@@ -4,7 +4,7 @@
   "description": "Garrett Maki Real Estate Agent",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "hamburgers": "^1.1.3",
     "webpack": "^4.41.2",
     "webpack-dev-server": "^3.9.0"
